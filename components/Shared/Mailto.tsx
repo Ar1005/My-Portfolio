@@ -10,7 +10,7 @@ const Mailto = () => {
 
   return (
     <>
-    <div className="hidden md:flex flex items-center justify-center min-h-[800px] bg-neutral-100">
+    <div className="hidden md:flex flex items-center justify-center min-h-[800px] bg-white">
       <div className="flex items-start flex-col">
         <div>
           <h1 className="text-4xl font-bold mb-4 text-indigo-500">Send me an email</h1>
@@ -26,7 +26,7 @@ const Mailto = () => {
       </div>
       <Image src="/star.png" alt="hehe" width={400} height={400} className="ml-24"/>
     </div>
-    <div className="md:hidden flex flex-col items-center justify-center min-h-[540px] bg-neutral-100">
+    <div className="md:hidden flex flex-col items-center justify-center min-h-[540px] bg-white">
       <div className="text-center mb-8">
         <h1 className="text-2xl md:text-4xl font-bold mb-2 text-indigo-500">
           Send me an email

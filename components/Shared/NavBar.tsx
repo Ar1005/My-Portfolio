@@ -9,9 +9,9 @@ import {GrClose} from "react-icons/gr"
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className="flex items-center justify-around">
+    <div className="md:hidden flex items-center justify-evenly">
       <nav className="w-full bg-white fixed top-0 left-0 right-0 z-10 drop-shadow">
-        <div className="justify-around px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-evenly px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-[14px] md:block">
               {/* LOGO */}
@@ -31,9 +31,9 @@ function NavBar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <GrClose className="text-3xl"/>
+                    <GrClose className="text-3xl text-black"/>
                   ) : (
-                    <FcMenu className="text-3xl"
+                    <FcMenu className="text-3xl text-black"
                     />
                   )}
                 </button>

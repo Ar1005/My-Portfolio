@@ -6,6 +6,8 @@ import { BookmarkIcon } from "lucide-react";
 import List from "../Cards/List";
 import Video from "./Video";
 import User from "../Cards/User";
+import Website from "../Projects/Website";
+import Footer from "@/My-Portfolio/components/Shared/Footer";
 
 const Tools = () => {
   return (
@@ -30,7 +32,7 @@ const Tools = () => {
             <span>to unleash your next Great Idea with my expertise!</span>
           </div>
         </div>
-        <div className="ml-20 flex flex-col items-center gap-4">
+        <div className=" ml-20 flex flex-col items-center gap-4">
           <div className="flex items-center">
             <div className="p-2 border mt-20">
               <Switch />
@@ -44,6 +46,7 @@ const Tools = () => {
           </div>
           <Video />
         </div>
+
       </div>
       <Techstack />
     </div>

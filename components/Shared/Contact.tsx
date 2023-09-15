@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="hidden md:flex flex justify-center items-center min-h-[800px] bg-white drop-shadow">
+      <div className="hidden md:flex flex justify-center items-center min-h-[800px] bg-neutral-100 drop-shadow">
         <div className="flex flex-col items-start">
           <h2 className="text-7xl text-indigo-500 font-bold">Contact.</h2>
           <div>Get in touch with me via social media or email.</div>
@@ -40,7 +40,7 @@ const Contact = () => {
           className="rounded-lg ml-20"
         />
       </div>
-      <div className="md:hidden flex flex-col justify-center items-center min-h-[760px] bg-white">
+      <div className="md:hidden flex flex-col justify-center items-center min-h-[760px] bg-neutral-100 drop-shadow">
         <h2 className="text-4xl md:text-7xl text-indigo-500 font-bold mt-10 md:mt-20">
           Contact.
         </h2>

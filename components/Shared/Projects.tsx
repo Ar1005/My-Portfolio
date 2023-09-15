@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <div className="hidden md:flex flex flex-col justify-center items-center min-h-screen">
-        <div className="flex flex-col mt-48">
+        <div className="flex flex-col mt-10">
           <div className="text-black flex items-center mx-auto">
             <div className="flex items-center">
               <div className="text-black flex items-start flex-col mb-8">

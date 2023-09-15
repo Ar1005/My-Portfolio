@@ -3,11 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
-import { FcMenu } from "react-icons/fc";
-import { GrClose } from "react-icons/gr";
 import { HiMenu, HiMenuAlt2 } from "react-icons/hi";
 
-const Topbar = () => {
+const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   useEffect(() => {
@@ -27,7 +25,7 @@ const Topbar = () => {
     };
   }, []);
 
-  const scroll = `fixed z-10 w-full py-[14px] flex items-center justify-around transition-transform duration-1000 ${
+  const scroll = `md:flex hidden fixed z-10 w-full py-[14px] flex items-center justify-around transition-transform duration-1000 ${
     navbar
       ? "bg-white drop-shadow transform translate-y-0 transition duration-400"
       : "bg-neutral-100 transform -translate-y-0 transition duration-400"
@@ -35,35 +33,7 @@ const Topbar = () => {
 
   return (
     <div className={scroll}>
-        <div className="justify-evenly px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-[14px] md:block">
-              {/* LOGO */}
-              <Link href="/">
-                <Image
-                  src="/Logo.svg"
-                  alt="My Logo"
-                  className=" h-14 w-14 cursor-pointer opacity-100 hover:opacity-75"
-                  width={60}
-                  height={60}
-                />
-              </Link>
-              {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <GrClose className="text-3xl"/>
-                  ) : (
-                    <FcMenu className="text-3xl"
-                    />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
+
       <Link href="/">
         <Image
           src="/Logo.svg"
@@ -102,4 +72,4 @@ const Topbar = () => {
   );
 };
 
-export default Topbar;
+export default Header;

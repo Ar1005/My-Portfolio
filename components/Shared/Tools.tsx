@@ -5,8 +5,7 @@ import { Button } from "@/components/ui/button";
 import { BookmarkIcon } from "lucide-react";
 import List from "../Cards/List";
 import Video from "./Video";
-import User from "../Cards/User";
-import Website from "../Projects/Website";
+import User from "../Cards/User";//
 import Footer from "@/My-Portfolio/components/Shared/Footer";
 
 const Tools = () => {

@@ -3,10 +3,8 @@ import Techstack from "./TechStack";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { BookmarkIcon } from "lucide-react";
-import List from "../Cards/List";
 import Video from "./Video";
-import User from "../Cards/User";//
-import Footer from "@/My-Portfolio/components/Shared/Footer";
+import User from "../Cards/User";
 
 const Tools = () => {
   return (

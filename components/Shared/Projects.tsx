@@ -42,22 +42,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/*this is a footer*/}
-        <div className="justify-self-end w-full flex">
-          <div className="hidden md:flex w-full h-20 bg-[#2d2e32] flex items-center justify-center justify-self-end gap-40">
-            <span className="font-normal text-neutral-100">
-              COPYRIGHT © ARMAND
-            </span>
-            <div className="flex gap-4">
-              <Link href="https://www.linkedin.com/in/armand-abdullah-370891215/">
-                <AiFillLinkedin className="h-8 w-8  drop-shadow-lg text-white cursor-pointer opacity-75 hover:opacity-100" />
-              </Link>
-              <Link href="https://github.com/Ar1005">
-                <AiFillGithub className="h-8 w-8  drop-shadow-lg text-white cursor-pointer opacity-75 hover:opacity-100" />
-              </Link>
-            </div>
-          </div>
-        </div>
+        
       </div>
       {/*this is a mobile view*/}
       <div className="md:hidden flex flex-col justify-center items-center min-h-screen mt-24 p-4">

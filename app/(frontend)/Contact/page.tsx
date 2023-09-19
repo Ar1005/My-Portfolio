@@ -8,7 +8,6 @@ const page = () => {
       <div>
         <Contact />
         <Mailto />
-        <Footer />
       </div>
   )
 }

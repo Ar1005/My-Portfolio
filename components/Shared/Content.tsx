@@ -13,7 +13,7 @@ const Content = () => {
           <div className="flex flex-col items-center">
             <div className="flex flex-col mx-auto gap-x-40 items-center">
               <div className="avatar">
-                <div className="w-[400px] mb-10 rounded-full">
+                <div className="w-[400px] mt-24 mb-10 rounded-full">
                   <img src="/Profile.jpg" />
                 </div>
               </div>
@@ -42,22 +42,7 @@ const Content = () => {
             <Techstack />
           </div>
         </div>
-        {/*this is the footer*/}
-        <div className="justify-self-end w-full flex">
-          <div className="hidden md:flex w-full h-20 bg-[#2d2e32] flex items-center justify-center justify-self-end gap-40">
-            <span className="font-normal text-neutral-100">
-              COPYRIGHT © ARMAND
-            </span>
-            <div className="flex gap-4">
-              <Link href="https://www.linkedin.com/in/armand-abdullah-370891215/">
-                <AiFillLinkedin className="h-8 w-8  drop-shadow-lg text-white cursor-pointer opacity-75 hover:opacity-100" />
-              </Link>
-              <Link href="https://github.com/Ar1005">
-                <AiFillGithub className="h-8 w-8  drop-shadow-lg text-white cursor-pointer opacity-75 hover:opacity-100" />
-              </Link>
-            </div>
-          </div>
-        </div>
+        
       </div>
       {/*this is a the mobile view*/}
       <div className="md:hidden flex my-auto justify-center items-center">

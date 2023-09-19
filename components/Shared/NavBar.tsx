@@ -47,22 +47,22 @@ function NavBar() {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex font-semibold ">
-                <li className="pb-6 text-lg text-neutral-900 py-2 md:px-2 text-center border-b-[1px] md:border-b-0  hover:bg-indigo-700  border-neutral-200  md:hover:text-indigo-500 md:hover:bg-transparent">
+                <li className="py-4 text-lg text-neutral-900 md:px-2 text-center border-b-[1px] md:border-b-0  hover:bg-indigo-700  border-neutral-150  md:hover:text-indigo-500 md:hover:bg-transparent">
                   <Link href="/About" onClick={() => setNavbar(!navbar)}>
                     About Me
                   </Link>
                 </li>
-                <li className="pb-6 text-lg text-neutral-900 py-2 px-2 text-center  border-b-[1px] md:border-b-0  hover:bg-indigo-600  border-neutral-200  md:hover:text-indigo-500 md:hover:bg-transparent">
+                <li className="py-4 text-lg text-neutral-900 px-2 text-center  border-b-[1px] md:border-b-0  hover:bg-indigo-600  border-neutral-150  md:hover:text-indigo-500 md:hover:bg-transparent">
                   <Link href="/Portfolio" onClick={() => setNavbar(!navbar)}>
                     Portfolio
                   </Link>
                 </li>
-                <li className="pb-6 text-lg text-neutral-900 py-2 px-2 text-center  border-b-[1px] md:border-b-0  hover:bg-indigo-600  border-neutral-200  md:hover:text-indigo-500 md:hover:bg-transparent">
+                <li className="py-4 text-lg text-neutral-900 px-2 text-center  border-b-[1px] md:border-b-0  hover:bg-indigo-600  border-neutral-150  md:hover:text-indigo-500 md:hover:bg-transparent">
                   <Link href="/Tools" onClick={() => setNavbar(!navbar)}>
                     Tools
                   </Link>
                 </li>
-                <li className="pb-6 text-lg text-neutral-900 py-2 px-2 text-center  border-b-[1px] md:border-b-0  hover:bg-indigo-600  border-neutral-200  md:hover:text-indigo-500 md:hover:bg-transparent">
+                <li className="py-4 text-lg text-neutral-900 px-2 text-center  border-b-[1px] md:border-b-0  hover:bg-indigo-600  border-neutral-150  md:hover:text-indigo-500 md:hover:bg-transparent">
                   <Link href="/Contact" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>

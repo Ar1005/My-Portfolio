@@ -18,7 +18,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="md:hidden w-full h-20 bg-[#2d2e32] flex items-center justify-self-end justify-center gap-4 p-2">
-        <span className="font-normal text-neutral-100 text-center">COPYRIGHT © ARMAND</span>
+        <span className="font-normal text-neutral-100 text-center">
+          COPYRIGHT © ARMAND
+        </span>
         <div className="flex gap-4">
           <Link href="https://www.linkedin.com/in/armand-abdullah-370891215/">
             <AiFillLinkedin className="h-8 w-8  drop-shadow-lg text-white cursor-pointer opacity-75 hover:opacity-100" />

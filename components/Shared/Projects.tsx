@@ -2,42 +2,64 @@ import React from "react";
 import Threads from "../Projects/Threads";
 import Color from "../Projects/Color";
 import Image from "next/image";
+import Link from "next/link";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Projects = () => {
   return (
     <>
-      <div className="hidden md:flex flex flex-col justify-center items-center min-h-screen">
-        <div className="flex flex-col mt-10">
-          <div className="text-black flex items-center mx-auto">
-            <div className="flex items-center">
-              <div className="text-black flex items-start flex-col mb-8">
-                <h2 className="font-bold text-7xl text-indigo-500">
-                  Portfolio.
-                </h2>
-                <p className="flex flex-col text-xl mt-4 items-center">
-                  Check out some of my latest projects
-                </p>
-                <p className=" text-xl mt-4 flex flex-col items-start justify-center">
-                  Every project I make is a captivating puzzle of development
-                  where
-                  <span> each piece elegantly falls into place</span>
-                </p>
+      {/*desktop view*/}
+      <div className="flex flex-col min-h-screen items-center justify-center hidden md:flex my-auto">
+        <div className="flex flex-col">
+          <div className="flex flex-col">
+            <div className="text-black flex items-center mx-auto">
+              <div className="flex items-center">
+                <div className="text-black flex items-start flex-col mb-8">
+                  <h2 className="font-bold text-7xl text-indigo-500">
+                    Portfolio.
+                  </h2>
+                  <p className="flex flex-col text-xl mt-4 items-center">
+                    Check out some of my latest projects
+                  </p>
+                  <p className=" text-xl mt-4 flex flex-col items-start justify-center">
+                    Every project I make is a captivating puzzle of development
+                    where
+                    <span> each piece elegantly falls into place</span>
+                  </p>
+                </div>
+                <Image
+                  src="/develop.jpg"
+                  alt="Develop"
+                  width={600}
+                  height={1000}
+                  className="ml-20  rounded-lg "
+                />
               </div>
-              <Image
-                src="/develop.jpg"
-                alt="Develop"
-                width={600}
-                height={1000}
-                className="ml-20  rounded-lg "
-              />
+            </div>
+            <div className="flex gap-x-10 ">
+              <Threads />
+              <Color />
             </div>
           </div>
-          <div className="flex gap-10">
-            <Threads />
-            <Color />
+        </div>
+        {/*this is a footer*/}
+        <div className="justify-self-end w-full flex">
+          <div className="hidden md:flex w-full h-20 bg-[#2d2e32] flex items-center justify-center justify-self-end gap-40">
+            <span className="font-normal text-neutral-100">
+              COPYRIGHT © ARMAND
+            </span>
+            <div className="flex gap-4">
+              <Link href="https://www.linkedin.com/in/armand-abdullah-370891215/">
+                <AiFillLinkedin className="h-8 w-8  drop-shadow-lg text-white cursor-pointer opacity-75 hover:opacity-100" />
+              </Link>
+              <Link href="https://github.com/Ar1005">
+                <AiFillGithub className="h-8 w-8  drop-shadow-lg text-white cursor-pointer opacity-75 hover:opacity-100" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
+      {/*this is a mobile view*/}
       <div className="md:hidden flex flex-col justify-center items-center min-h-screen mt-24 p-4">
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl text-indigo-500 font-bold mb-4">

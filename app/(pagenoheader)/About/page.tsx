@@ -8,16 +8,11 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className="bg-neutral-100 min-h-screen w-full">
-      <Header />
-      <NavBar />
       <div>
         <About/>
         <FunFacts />
         <AboutMe />
-        <Footer />
       </div>
-    </main>
   )
 }
 
